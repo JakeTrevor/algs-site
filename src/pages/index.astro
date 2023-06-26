@@ -1,4 +1,5 @@
 ---
+import List from "../components/list.svelte";
 ---
 
 <html lang="en">
@@ -7,9 +8,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Algorithms</title>
 	</head>
-	<body>
+	<body class="grid place-items-center h-screen">
 		<h1>Astro</h1>
+
+		<List client:load />
 	</body>
 </html>
